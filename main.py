@@ -4,8 +4,8 @@ from binance.client import Client
 from binance.enums import *
 
 # Binance API bilgileri (Railway'de environment olarak tanımlanır)
-API_KEY = "BINANCE_API_KEY"
-API_SECRET = "BINANCE_API_SECRET"
+API_KEY = os.environ.get("BINANCE_API_KEY")
+API_SECRET = os.environ.get("BINANCE_API_SECRET")
 
 client = Client(API_KEY, API_SECRET)
 
