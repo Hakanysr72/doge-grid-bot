@@ -80,5 +80,5 @@ def grid_bot_loop():
             print(f"Bot hatası: {e}")
             time.sleep(15)
 
-if name == "main":
+if __name__ == "__main__":
     grid_bot_loop()
